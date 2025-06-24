@@ -17,5 +17,69 @@
         </nav>
     </header>
     
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="assets/images/nasi-goreng.jpg" alt="Nasi Goreng" width="250px">
+                <h3>Nasi Goreng</h3>
+                <p>Indonesian-style fried rice with shredded chicken, egg, and crackers. <em>Rp25,000</em></p>
+            </article>
+
+            <article>
+                <img src="assets/images/rawon.webp" alt="Rawon" width="250px">
+                <h3>Rawon</h3>
+                <p>Rich black beef soup made with keluak nuts, served with warm rice. <em>Rp35,000</em></p>
+            </article>
+
+            <article>
+                <img src="assets/images/pecel.webp" alt="Pecel" width="250px">
+                <h3>Pecel</h3>
+                <p>Steamed vegetables topped with traditional Javanese peanut sauce and crispy crackers. <em>Rp20,000</em></p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="" method="">
+                <!-- quantity (number) -->
+                <label for="nasi-goreng">Nasi Goreng (Qty):</label>
+                <input type="number" id="nasi-goreng" name="nasi-goreng-quantity" min="0"><br><br>
+
+                <label for="rawon">Rawon (Qty):</label>
+                <input type="number" id="rawon" name="rawon-quantity" min="0"><br><br>
+
+                <label for="pecel">Pecel (Qty):</label>
+                <input type="number" id="pecel" name="pecel-quantity" min="0"><br><br>
+
+                <!-- sides or add ons (checkbox)-->
+                <p>Sides/Add-ons:</p>
+                <label for="crackers">Crackers</label>
+                <input id="crackers" name="sides" type="checkbox" value="crackers">
+                <br>
+
+                <label for="shredded-chicken">Shredded Chicken</label>
+                <input id="shredded-chicken" name="sides" type="checkbox" value="shredded-chicken">
+                <br>
+
+                <label for="Egg">Egg</label>
+                <input id="egg" name="sides" type="checkbox" value="egg">
+                <br>
+                <br>
+
+                <!-- special request (text-area) -->
+                <label for="request">Anything else you want to add?</label>
+                <br>
+                <textarea id="request" name="extra" rows="3" cols="40"></textarea>
+                <br>
+                <br>
+
+                <!-- submit -->
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    
 </body>
 </html>
